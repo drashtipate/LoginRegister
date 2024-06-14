@@ -49,7 +49,7 @@ class logincontroller extends Controller
 
         // // Attempt to log in the user
         // if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-        //     return redirect()->route('login')->with('success', 'Login Successfully!!');
+        //     return redirect()->route('dashboard')->with('success', 'Login Successfully!!');
         // } 
 
         // // If something else fails
