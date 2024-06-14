@@ -1,0 +1,98 @@
+
+/* * * * * General CSS * * * * */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main-content{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 530px;
+    /* height: 600px; */
+    margin: 100px auto 100px;
+    background: #fff;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
+}
+
+.form{
+    position: relative;
+    overflow: hidden;
+    padding: 50px 50px 0;
+    height: 100%;
+}
+.form h2 {
+    width: 100%;
+    font-size: 26px;
+    text-align: center;
+    font-weight: revert-layer;
+    font-style: italic;
+}
+.form-control:focus{
+    outline: none;
+    /* border-color: #ced4da; */
+    border: 1px solid #d4af7a;
+    box-shadow: none;
+}
+.form form {
+    padding: 30px;
+}
+
+.form .submit{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #d4af7a;
+    text-transform: uppercase;
+    display: block;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+button {
+    margin: 0 auto;
+}
+.form .error-text{
+    color: red;
+}
+.form-control {
+    border: 1px solid #d4af7a;
+}
+
+/* media query */
+@media only screen and (max-width: 425px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .form h2{
+        font-size: 23px;
+    }
+    .form form {
+        padding: 15px 0 15px 0;
+    }
+    .form .submit{
+        width: 190px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .form p{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .main-content {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .main-content {
+        width: 100%;
+    }
+}
