@@ -35,7 +35,7 @@ class Registercontroller extends Controller
         //login in the user
         // Auth::login($user);
 
-        return redirect('login')->with('success','User registered successfully');
+        return redirect('register')->with('success','User registered successfully');
         // return response()->json(['message' => 'User registered successfully'], 201);
     }
 }
