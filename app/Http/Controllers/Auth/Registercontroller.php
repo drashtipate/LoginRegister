@@ -33,9 +33,9 @@ class Registercontroller extends Controller
         ]);
 
         //login in the user
-        // Auth::login($user);
+        Auth::login($user);
 
-        return redirect('register')->with('success','User registered successfully');
+        return redirect('register')->with('success','User registered and logged in successfully');
         // return response()->json(['message' => 'User registered successfully'], 201);
     }
 }
